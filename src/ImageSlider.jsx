@@ -2,16 +2,16 @@ import { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const images = [
-    { url: 'https://image-slider-1tk9.onrender.com/image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
-    { url: 'https://image-slider-1tk9.onrender.com/image/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
+    { url: '/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
+    { url: '/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
+    { url: '/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
+    { url: '/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
+    { url: '/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
+    { url: '/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
+    { url: '/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
+    { url: '/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
+    { url: '/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
+    { url: '/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
 ];
 
 const ImageSlider = () => {
