@@ -2,27 +2,27 @@ import { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const images = [
-    { url: 'image/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
-    { url: 'image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
-    { url: 'image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
-    { url: 'image/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
-    { url: 'image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
-    { url: 'image/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
-    { url: 'image/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
-    { url: 'image/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
-    { url: 'image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
-    { url: 'image/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
+    { url: '/image/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
+    { url: '/image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
+    { url: '/image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
+    { url: '/image/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
+    { url: '/image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
+    { url: '/image/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
+    { url: '/image/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
+    { url: '/image/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
+    { url: '/image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
+    { url: '/image/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
 ];
 
 const ImageSlider = () => {
     const [currentImages, setCurrentImages] = useState(images);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const [autoPlay, setAutoPlay] = useState(true);
-    const [activeMode, setActiveMode] = useState('auto'); // Tracks current mode: Auto or Manual
+    const [activeMode, setActiveMode] = useState('auto'); // Auto or Manual Mode
     const progressRef = useRef(null);
     const autoSlideTimer = useRef(null);
 
-    const slideInterval = 4000; // Duration for auto-slide
+    const slideInterval = 4000; // Auto-slide every 4 seconds
 
     useEffect(() => {
         if (autoPlay) {
@@ -59,7 +59,8 @@ const ImageSlider = () => {
             setCurrentImages((prev) => [prev[prev.length - 1], ...prev.slice(0, -1)]);
         }
 
-        setIsTransitioning(false);
+        setTimeout(() => setIsTransitioning(false), 500); // Smooth transition delay
+
         resetProgressAnimation();
         if (autoPlay) initiateAutoSlide();
     };
