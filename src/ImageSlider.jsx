@@ -2,16 +2,16 @@ import { useState, useEffect, useRef } from 'react';
 import './index.css';
 
 const images = [
-    { url: 'image/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
-    { url: 'image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
-    { url: 'image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
-    { url: 'image/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
-    { url: 'image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
-    { url: 'image/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
-    { url: 'image/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
-    { url: 'image/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
-    { url: 'image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
-    { url: 'image/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
+    { url: '/image/eagel3.jpg', name: 'EAGLE', description: 'Eagles symbolize strength and dominance.' },
+    { url: '/image/parrot2.jpg', name: 'PARROT', description: 'Parrots are vibrant birds known for mimicking sounds.' },
+    { url: '/image/butterfly2.jpg', name: 'BUTTERFLY', description: 'Butterflies represent change and beauty.' },
+    { url: '/image/owl1.jpg', name: 'OWL', description: 'Owls are wise nocturnal hunters.' },
+    { url: '/image/kingfirser2.jpeg', name: 'KINGFISHER', description: 'Kingfishers are skilled at catching fish.' },
+    { url: '/image/crow.jpg', name: 'CROW', description: 'Crows are highly intelligent and resourceful birds.' },
+    { url: '/image/heron.jpeg', name: 'HERON', description: 'Herons wade through water to catch fish.' },
+    { url: '/image/eagel1.jpg', name: 'EAGLE', description: 'Eagles soar high with great vision.' },
+    { url: '/image/butterfly1.jpeg', name: 'BUTTERFLY', description: 'Butterflies have delicate wings and vivid colors.' },
+    { url: '/image/owl2.jpg', name: 'OWL', description: 'Owls have a sharp sense of hearing.' },
 ];
 
 const ImageSlider = () => {
